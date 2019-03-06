@@ -1,0 +1,210 @@
+/* === Global Styles === */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+li { list-style-type: none; }
+a { color: #037de4; font-weight: 300; text-decoration: none; }
+a:hover { text-decoration: underline;}
+
+body {
+    min-width: 300px; /* your desired width */
+    max-width: 100%;
+    min-height: 300px; /* your desired width */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #ffffff;
+    color: #444444;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 85%;
+    min-height: 500px;
+    margin: 10px auto;
+}
+
+/* === Heading (Contact List) === */
+.heading h1 {
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: left;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #efefef;
+}
+
+/* === Search Field === */
+input {
+    width: 30%;
+    margin: 20px auto;
+    padding: 10px;
+    font-family: inherit;
+    font-weight: 200;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #dddddd;
+    outline: none;
+    transition-property: border;
+    transition-duration: 0.3s;
+    transition-delay: 0;
+    transition-timing-function: linear;
+}
+
+input:focus {
+    border-bottom: 1px solid #037de4;
+    font-weight: 300;
+}
+
+input::placeholder {
+    color: #bebebe;
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+/* === Names Container === */
+.namesContainer {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+.alphaHead h5 {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 22px;
+    color: #444444;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #efefef;
+}
+
+li.nameItem {
+    font-family: inherit;
+    font-weight: 200;
+    padding: 10px 0 5px 5px;
+    border-bottom: 1px solid #efefef;
+}
+
+li.nameItem:hover {
+    background-color: #fafafa;
+}
+
+
+/*************** RESPONSIVENESS ***************/
+/* 900px wide or less */
+@media screen and (max-width: 900px) {
+    .container {
+        width: 85%;
+    }
+
+    /* === Heading (Contact List) === */
+    .heading h1 {
+        font-size: 38px;
+    }
+
+    input {
+        width: 50%;
+        margin: 50px auto 10px auto;
+        font-size: 23px;
+    }
+
+    /* === Names Container === */
+    .namesContainer {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
+
+/* 667px wide or less */
+@media screen and (max-width: 667px) {
+    .container {
+        width: 90%;
+    }
+
+    /* === Heading (Contact List) === */
+    .heading h1 {
+        font-size: 32px;
+    }
+
+    input {
+        width: 60%;
+        margin: 50px auto 10px auto;
+        font-size: 22px;
+    }
+
+    /* === Names Container === */
+    .namesContainer {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
+
+/* 647px wide or less */
+@media screen and (max-width: 467px) {
+    .container {
+        width: 100%;
+    }
+
+    /* === Heading (Contact List) === */
+    .heading h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    input {
+        width: 60%;
+        margin: 40px auto 10px auto;
+        font-size: 18px;
+    }
+
+    input::placeholder {
+        font-size: 18px;
+    }
+
+    /* === Names Container === */
+    .namesContainer {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
+
+/* 367px wide or less */
+@media screen and (max-width: 367px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    /* === Heading (Contact List) === */
+    .heading h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    input {
+        width: 60%;
+        margin: 40px auto 0 auto;
+        font-size: 14px;
+    }
+
+    input::placeholder {
+        font-size: 14px;
+    }
+
+    /* === Names Container === */
+    .namesContainer {
+        width: 95%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+}
